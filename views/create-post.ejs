@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/styles/posts.css">
+  <link rel="stylesheet" href="/styles/base.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+  <main id="container">
+    <h1>Додати новий об'єкт</h1>
+    <form action="/posts" method="POST" class="form" enctype="multipart/form-data">
+      <div class="form-control">
+        <label for="title">Заголовок</label>
+        <input id="title" name="title" required>
+      </div>
+      <div class="form-control">
+        <label for="summary">Опис</label>
+        <textarea id="summary" name="summary" required rows="5"></textarea>
+      </div>
+      <div class="form-control">
+        <label for="geolocation">Геолокація</label>
+        <input id="geolocation" name="geolocation" required>
+      </div>
+      <div class="form-control">
+        <label for="images">Додати фото</label>
+        <input type="file" id="images" name="images" required accept="image/jpg, image/png" multiple>
+      </div>
+      <button class="btn">Додати</button>
+    </form>
+  </main>
+</body>
+
+</html>

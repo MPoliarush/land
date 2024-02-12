@@ -1,0 +1,163 @@
+
+#container{
+  width:90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+p{
+  text-align: left;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(89, 0, 255);
+}
+
+.map_ref{
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.map_ref img{
+  height: 25px;
+  width: 25px;
+}
+
+.btn:hover{
+  background-color: rgb(70, 4, 194);
+}
+
+.btn {
+  display: block;
+  width: fit-content;
+  cursor: pointer;
+  font: inherit;
+  background-color: rgb(89, 0, 255);
+  border: 1px solid rgb(89, 0, 255);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  margin: 15px auto;
+}
+
+.line{
+  display: flex;
+  width:100%;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: row wrap; 
+  gap: 10px;
+}
+
+.line-title{
+  display: block;
+  font-weight: 700;
+  width: 20%; 
+  margin: 10px 0 0;
+  flex: 0 0 25%;
+}
+
+.line-description{
+  flex: 1; /* Take up the remaining space */
+  padding-left: 10px;
+  margin: 10px 0 0;
+}
+
+
+.form {
+  max-width: 25rem;
+  margin: 2rem auto;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.25rem; 
+  text-align: left;
+}
+
+input, textarea, select {
+  width: 99%;
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid rgb(204, 204, 204);
+}
+
+input:focus,
+textarea:focus {
+  background-color: rgb(237, 228, 255);
+}
+
+input, textarea {
+  width: 95%;
+}
+
+.form-control {
+  margin: 0.5rem 0;
+}
+
+
+.images_container {
+  padding: .5vw;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: row wrap; 
+  flex-flow: row wrap; 
+  display: -webkit-box;
+  display: flex;
+  align-items: center;
+}
+
+.images_container img {
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto; 
+  width: 250px; 
+  height: auto; /* Set a fixed height */
+  object-fit: cover; /* Maintain aspect ratio */
+  margin: .5vw; 
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(40, 39, 39, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 95%;
+  max-height: 85%;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 5%;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 500px) {
+  .line-title {
+    width: 100%;
+    flex:none;
+  }
+  
+}

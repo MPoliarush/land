@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+  <link rel="stylesheet" href="/styles/posts.css">
+  <link rel="stylesheet" href="/styles/base.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+  <main id="container">
+    <h1>Наявні об'єкти</h1>
+    <a class="btn" href="/new-post">Додати новий об'єкт</a>
+      <ol>
+        <% for (const post of posts) { %>
+            <li>
+              <div class="line">
+                <p class="line-title"><%= post.title %></p>
+                <p class="line-description"><%= post.summary %>
+                  <a class="line-link" href="/post-detail/<%= post.transliterated %>">Детальніше...</a>
+                </p>
+              </div>
+            </li>
+            <hr>
+        <% } %>
+      </ol>
+  </main> 
+</body>
+
+</html>
