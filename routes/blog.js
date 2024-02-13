@@ -21,7 +21,7 @@ const storageConfig = multer.diskStorage({
 const upload = multer({storage:storageConfig})
 
 router.get('/', function (req, res) {
-  res.redirect('/posts');
+  res.redirect('/postsHTML');
 });
 
 router.get('/posts', async function (req, res) {
